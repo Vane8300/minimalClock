@@ -1,0 +1,70 @@
+html {
+    background: #2C394B ;
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+    font-family: Hervetica;
+}
+body {
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid #FF4C29;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    margin: 50px auto;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-3px);
+}
+
+.hour-hand {
+    width: 50%;
+    height: 6px;
+    background: #082032 ;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(1, 0.04, 0, 1.09);
+}
+
+.min-hand {
+    width: 50%;
+    height: 6px;
+    background: #082032 ;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(1, 0.04, 0, 1.09);
+}
+
+.second-hand {
+    width: 50%;
+    height: 2px;
+    background: #FF4C29 ;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(1, 0.04, 0, 1.09);
+}
